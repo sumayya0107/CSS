@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: #222;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+.logo{
+    transform: translateY(-40px);
+    opacity: 0;
+    animation: logo .8s .5s forwards;
+}
+@keyframes logo{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.collection{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.item{
+    transform: translateY(-40px);
+    opacity: 0;
+    animation: logo .8s .5s forwards;
+}
+.item:nth-child(1){
+    animation-delay: .7s;
+}
+.item:nth-child(2){
+    animation-delay: .9s;
+}
+.item:nth-child(3){
+    animation-delay: 1.1s;
+}
+.item:nth-child(4){
+    animation-delay: 1.3s;
+}
+
+
+
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background: radial-gradient(#555, #222);
+    text-align: center;
+    padding: 80px 20%;
+}
+
+.banner h1{
+    font-size: 60px;
+    color: white;
+}
+.banner p{
+    line-height: 1.6;
+    padding: 30px 0;
+    color: #aaa;
+}
+.banner button{
+    padding: 10px 30px;
+}
+
+.top{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: top .8s ease-out 2.1s forwards;
+}
+@keyframes top{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.top:nth-child(2){
+    animation-delay: 2.3s;
+}
+.top:nth-child(3){
+    animation-delay: 2.5s;
+}
